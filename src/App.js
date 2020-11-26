@@ -5,8 +5,6 @@ import './bootstrap.min.css'
 import Items from './components/items';
 
  
-// CommonJS
-const Swal = require('sweetalert2')
 
 
 function App() {
