@@ -5,6 +5,8 @@ class Top extends Component {
         cart:0
      }
       
+  
+
     render() { 
         console.log(this.props.cartItems)
         return ( 
@@ -19,7 +21,7 @@ class Top extends Component {
                  <ul>
                        <li><input type="text" className='form-control' placeholder='search'/>
 </li>
-                       <li><span className='badge badge-info'>{this.props.cartItems}</span>  <i className="fa fa-shopping-cart" aria-hidden="true" onClick={()=>alert('chill still under developement , this should be done by push notification instead of Alert')}style={{'fontSize':18}}></i>
+                       <li><span className='badge badge-info'>{this.props.cartItems}</span>  <i className="fa fa-shopping-cart" aria-hidden="true" onClick={()=>alert('still under construction')}style={{'fontSize':18}}></i>
 </li>
                        
                    </ul>

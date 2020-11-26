@@ -3,9 +3,16 @@ import './App.css';
 import Top from './components/top'
 import './bootstrap.min.css'
 import Items from './components/items';
-import { Notification } from 'react-push-notification'
+
+ 
+// CommonJS
+const Swal = require('sweetalert2')
+
+
 function App() {
-  const [state, setState] = useState({cartItems: 0});
+  const [state , setState] = useState({cartItems: 0});
+
+
   return (
     <div className="App">
         <Top cartItems={state.cartItems}/>
