@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Top from './top'
 class Items extends Component {
-    state = {  }
+    state = {}
     render(props) { 
+        console.log(this.props.buyAction)
         return ( 
             <>
            
@@ -17,9 +18,10 @@ class Items extends Component {
                             <li>price: {this.props.price}</li>
                             <li>rate: {this.props.rate}</li>
                             
+                            
                         </ul>
-                        <button className='btn btn-info'>Buy</button>
-                        <h1>{this.state.cart}</h1>
+                        <button onClick={()=>this.props.buyAction()} className='btn btn-info'>Buy{this.state.cart}</button>
+                       
                     </span>
                 </div>
             </div>
