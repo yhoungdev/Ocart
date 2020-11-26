@@ -18,7 +18,6 @@ class Items extends Component {
                             <li>price: {this.props.price}</li>
                             <li>rate: {this.props.rate}</li>
                             
-                            
                         </ul>
                         <button onClick={()=>this.props.buyAction()} className='btn btn-info'>Buy{this.state.cart}</button>
                        
