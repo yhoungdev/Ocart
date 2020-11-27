@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Top from './top'
 class Items extends Component {
     state = {}
     render(props) { 
